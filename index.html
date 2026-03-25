@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="style.css">
@@ -26,6 +26,11 @@
 
       <div class="hero-grid">
         <div class="hero-copy">
+          <div class="status-row" aria-label="Stato progetto">
+            <span class="status-pill">Registrata con amore</span>
+            <span class="status-pill muted">Pagina sorpresa</span>
+          </div>
+
           <p class="intro">Adesso io l'ho registrata con me</p>
           <h1 id="hero-title">VioLaAI</h1>
           <p class="lead">
@@ -44,9 +49,12 @@
             </button>
           </div>
 
-          <p id="message" class="message" aria-live="polite">
-            Clicca il bottone per leggere il messaggio dedicato a lei.
-          </p>
+          <section id="message-box" class="message-box" aria-live="polite">
+            <p class="message-label">Messaggio dedicato</p>
+            <p id="message" class="message">
+              Clicca il bottone per leggere il messaggio dedicato a lei.
+            </p>
+          </section>
         </div>
 
         <aside class="memory-card" aria-label="Messaggio speciale">
@@ -55,6 +63,10 @@
             Ci sono pagine che nascono come prove e poi diventano ricordi. Questa e' una di quelle:
             semplice, elegante e fatta per farle arrivare un sorriso.
           </p>
+          <div class="signature-block">
+            <span class="signature-label">Coming soon</span>
+            <strong class="signature-name">VioLaAI</strong>
+          </div>
           <div class="sparkles" aria-hidden="true">
             <span></span>
             <span></span>
