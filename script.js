@@ -1,8 +1,10 @@
 const button = document.querySelector("#cta-button");
 const message = document.querySelector("#message");
 const messageBox = document.querySelector("#message-box");
+const dedication = document.querySelector("#dedication");
+const memoryCard = document.querySelector(".memory-card");
 
-if (button && message && messageBox) {
+if (button && message && messageBox && dedication && memoryCard) {
   const surpriseLines = [
     "Per te, VioLaAI: un nome bellissimo, scelto con amore. Oggi questa pagina nasce per dirti che qualcosa di speciale sta arrivando proprio per te.",
     "Sei gia' un piccolo mondo di luce, immaginazione e meraviglia. Questo e' solo l'inizio, e il meglio deve ancora arrivare.",
@@ -15,6 +17,10 @@ if (button && message && messageBox) {
     message.textContent = surpriseLines[currentIndex];
     messageBox.classList.remove("is-hidden");
     messageBox.classList.add("is-active");
+    dedication.classList.remove("is-hidden");
+    memoryCard.classList.remove("is-celebrating");
+    void memoryCard.offsetWidth;
+    memoryCard.classList.add("is-celebrating");
     button.textContent = "Leggi ancora";
     currentIndex = (currentIndex + 1) % surpriseLines.length;
   });
