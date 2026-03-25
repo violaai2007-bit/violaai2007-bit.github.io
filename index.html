@@ -3,37 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>La Mia Prima App</title>
+  <title>VioLaAI | Coming Soon</title>
   <meta
     name="description"
-    content="Una semplice web app responsive con tema scuro, interazione JavaScript e struttura pronta per GitHub Pages."
+    content="Una pagina sorpresa dedicata a VioLaAI con stile moderno, messaggio affettuoso e pubblicazione pronta su GitHub Pages."
   >
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="background-orb orb-left" aria-hidden="true"></div>
+  <div class="background-orb orb-right" aria-hidden="true"></div>
+
   <main class="page-shell">
     <section class="hero-card" aria-labelledby="hero-title">
-      <p class="eyebrow">Progetto Web</p>
-      <h1 id="hero-title">La mia prima app</h1>
-      <p class="lead">
-        Una base pulita, responsive e pronta per essere pubblicata su GitHub Pages.
-      </p>
+      <p class="eyebrow">Una sorpresa speciale</p>
 
-      <div class="actions">
-        <button id="cta-button" class="cta-button" type="button">
-          Clicca qui
-        </button>
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="intro">Adesso io l'ho registrata con me</p>
+          <h1 id="hero-title">VioLaAI</h1>
+          <p class="lead">
+            Un nome che promette immaginazione, luce e nuove idee. Questa pagina e' un piccolo regalo,
+            pensato con affetto per annunciare qualcosa di bello che sta arrivando.
+          </p>
+
+          <div class="coming-soon" aria-label="Coming soon">
+            <span>COMING</span>
+            <span>SOON</span>
+          </div>
+
+          <div class="actions">
+            <button id="cta-button" class="cta-button" type="button">
+              Apri la sorpresa
+            </button>
+          </div>
+
+          <p id="message" class="message" aria-live="polite">
+            Clicca il bottone per leggere il messaggio dedicato a lei.
+          </p>
+        </div>
+
+        <aside class="memory-card" aria-label="Messaggio speciale">
+          <div class="memory-badge">Per tua figlia</div>
+          <p class="memory-text">
+            Ci sono pagine che nascono come prove e poi diventano ricordi. Questa e' una di quelle:
+            semplice, elegante e fatta per farle arrivare un sorriso.
+          </p>
+          <div class="sparkles" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </aside>
       </div>
-
-      <p id="message" class="message" aria-live="polite">
-        Premi il pulsante per vedere il messaggio.
-      </p>
     </section>
   </main>
 
