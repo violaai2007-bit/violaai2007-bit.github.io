@@ -245,6 +245,14 @@ h1 {
   line-height: 1.75;
 }
 
+.message-paragraph {
+  margin: 0;
+}
+
+.message-paragraph + .message-paragraph {
+  margin-top: 0.8rem;
+}
+
 .message.is-typing::after {
   content: "";
   display: inline-block;
@@ -510,25 +518,89 @@ h1 {
   }
 }
 
-@media (max-width: 640px) {
-  .hero-card {
-    padding: 24px;
-    border-radius: 22px;
-  }
-
+@media (max-width: 900px) {
   .hero-grid {
     grid-template-columns: 1fr;
   }
 
-  .lead {
-    font-size: 1rem;
+  .memory-card {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .page-shell {
+    padding: 16px;
+    place-items: start;
+  }
+
+  .hero-card {
+    padding: 24px 18px;
+    border-radius: 24px;
+  }
+
+  .eyebrow,
+  .message-label,
+  .signature-label,
+  .promise-label,
+  .memory-badge {
+    letter-spacing: 0.12em;
+  }
+
+  .lead,
+  .memory-text,
+  .promise-text,
+  .message,
+  .dedication {
+    font-size: 0.98rem;
+    line-height: 1.72;
+  }
+
+  .coming-soon {
+    gap: 8px;
+  }
+
+  .coming-soon span,
+  .status-pill {
+    font-size: 0.78rem;
   }
 
   .cta-button {
     width: 100%;
+    justify-content: center;
+  }
+
+  .surprise-hint {
+    align-items: flex-start;
+  }
+
+  .message-box {
+    padding: 16px 14px;
+    max-height: 52vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
   .message {
     min-height: 4.8rem;
+  }
+
+  .dedication {
+    font-size: 0.96rem;
+  }
+
+  .memory-card {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .sparkles {
+    height: 56px;
+    margin-top: 20px;
+  }
+
+  .background-orb {
+    width: 220px;
+    height: 220px;
   }
 }
