@@ -1,0 +1,122 @@
+:root {
+  color-scheme: dark;
+  --bg: #07111f;
+  --bg-accent: #10243c;
+  --card: rgba(10, 19, 34, 0.82);
+  --card-border: rgba(147, 197, 253, 0.2);
+  --text: #f8fafc;
+  --muted: #b8c4d6;
+  --accent: #7dd3fc;
+  --accent-strong: #38bdf8;
+  --shadow: 0 24px 70px rgba(2, 6, 23, 0.45);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  background:
+    radial-gradient(circle at top, rgba(56, 189, 248, 0.2), transparent 30%),
+    radial-gradient(circle at bottom right, rgba(14, 165, 233, 0.16), transparent 25%),
+    linear-gradient(160deg, var(--bg) 0%, #020617 100%);
+  color: var(--text);
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.hero-card {
+  width: min(100%, 720px);
+  padding: 32px;
+  border: 1px solid var(--card-border);
+  border-radius: 28px;
+  background: var(--card);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow);
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4.8rem);
+  line-height: 0.98;
+}
+
+.lead {
+  margin: 18px 0 0;
+  max-width: 34rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.actions {
+  margin-top: 28px;
+}
+
+.cta-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font: inherit;
+  font-weight: 800;
+  color: #00111d;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
+  cursor: pointer;
+  box-shadow: 0 16px 32px rgba(56, 189, 248, 0.28);
+  transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 36px rgba(56, 189, 248, 0.35);
+  filter: brightness(1.05);
+}
+
+.cta-button:focus-visible {
+  outline: 3px solid rgba(125, 211, 252, 0.45);
+  outline-offset: 4px;
+}
+
+.message {
+  margin: 22px 0 0;
+  min-height: 1.75rem;
+  color: #dbeafe;
+  font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  .hero-card {
+    padding: 24px;
+    border-radius: 22px;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
